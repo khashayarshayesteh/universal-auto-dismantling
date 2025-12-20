@@ -30,5 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./universal-auto-dismantling/dist
-          # Optional: set custom branch if you want
-          # publish_branch: gh-pages
+          publish_branch: gh-pages
