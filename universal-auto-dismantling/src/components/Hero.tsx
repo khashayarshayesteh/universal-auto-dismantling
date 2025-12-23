@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
 
-                <span className="text-blue-400 block">Universal Auto Dismantling</span>
+                {/* <span className="text-blue-400 block">Universal Auto Dismantling</span> */}
 
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed">

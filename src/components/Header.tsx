@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Printer } from 'lucide-react';
+import { Menu, X, Printer, Car } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,11 +19,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="bg-blue-500 p-2 rounded-lg">
-              <Printer className="h-8 w-8 text-white" />
+              <Car className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-white">Universal Auto Dismantling</h1>
-              <p className="text-sm text-gray-400">Used and new parts</p>
+              {/* <h1 className="text-2xl font-bold text-white">Universal Auto Dismantling</h1> */}
+              <h1 className="text-lg text-gray-300">Used and new parts</h1>
             </div>
           </div>
 

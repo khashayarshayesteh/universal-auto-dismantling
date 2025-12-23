@@ -1,4 +1,8 @@
 import React from 'react';
+import  partCar from '../assets/partCar.jpeg';
+import  usedCar from '../assets/usedCar.jpeg';
+import  dismantlingCar from '../assets/dismantlingCar.jpeg';
+import  TruckdCar from '../assets/TruckCar.jpeg';
 
 const Products = () => {
   const categories = [
@@ -6,25 +10,25 @@ const Products = () => {
       title: 'Used Cars',
       description: 'High-quality pre-owned vehicles for every budget.',
       features: ['Inspected & certified', 'Affordable pricing', 'Variety of models', 'Warranty available'],
-      image: 'https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&w=800' // car lot
+      image: usedCar
     },
     {
       title: 'Auto Parts',
       description: 'Genuine and aftermarket car parts to keep your vehicles running smoothly.',
       features: ['Engine components', 'Suspension & brakes', 'Electrical parts', 'Interior & exterior accessories'],
-      image: 'https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&w=800' // car parts
+      image: partCar
     },
     {
       title: 'Vehicle Dismantling',
       description: 'Professional dismantling and recycling of vehicles in an eco-friendly manner.',
       features: ['Safe removal', 'Recycling & scrap', 'Parts resale', 'Environmental compliance'],
-      image: 'https://images.pexels.com/photos/159134/pexels-photo-159134.jpeg?auto=compress&cs=tinysrgb&w=800' // junkyard
+      image: dismantlingCar // junkyard
     },
     {
       title: 'Truck Services',
       description: 'Maintenance, repair, and parts for trucks of all sizes.',
       features: ['Heavy-duty trucks', 'Parts & repairs', 'Fleet support', 'Expert technicians'],
-      image: 'https://images.pexels.com/photos/2808899/pexels-photo-2808899.jpeg?auto=compress&cs=tinysrgb&w=800' // truck service
+      image: TruckdCar // truck service
     }
   ];
 
@@ -73,7 +77,7 @@ const brands = [
                   alt={category.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div> 
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-3">{category.title}</h3>
@@ -92,7 +96,7 @@ const brands = [
         </div>
 
         {/* Brands */}
-        <div className="text-center">
+        {/*<div className="text-center">
           <h3 className="text-2xl font-bold text-white mb-8">Trusted Brands We Carry</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {brands.map((brand, index) => (
@@ -111,7 +115,7 @@ const brands = [
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* Inquiry CTA */}
         <div className="mt-16 text-center">

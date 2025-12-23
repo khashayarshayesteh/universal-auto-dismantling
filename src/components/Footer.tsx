@@ -4,11 +4,12 @@ import {
   Phone,
   Mail,
   MapPin,
-  Clock,
+  Printer,
   Facebook,
   Instagram,
   Linkedin
 } from 'lucide-react';
+import truckCar from '../assets/truckCar.jpeg';
 
 const Footer = () => {
   const services = [
@@ -42,12 +43,17 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="bg-blue-500 p-2 rounded-lg">
-                <Car className="h-6 w-6 text-white" />
-              </div>
+
               <div>
-                <h3 className="text-xl font-bold">Universal Auto Dismantling</h3>
-                <p className="text-gray-400 text-sm">Used & Salvage Auto Parts</p>
+                <h3 className="font-bold text-center leading-tight">
+                  <span className="block text-2xl tracking-wider -mb-1">
+                    UNIVERSAL
+                  </span>
+                  <span className="block text-xl">
+                    AUTO DISMANTLING
+                  </span>
+                </h3>
+                <p className="text-gray-400 text-sm">NEW & USED AUTO PARTS</p>
               </div>
             </div>
 
@@ -114,31 +120,46 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
             <div className="space-y-4">
+
+              {/* Address */}
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-blue-400 mt-1" />
-                <div className="text-gray-300">
-                  <p>5534 Duarte St</p>
-                  <p>Los Angeles, CA 90058</p>
-                </div>
+  <MapPin className="h-5 w-5 text-blue-400 mt-1" />
+  <div className="text-gray-300">
+    <a
+      href="https://www.google.com/maps?q=5534+Duarte+St,+Los+Angeles,+CA+90058"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-400 underline"
+    >
+      5534 Duarte St, Los Angeles, CA 90058
+    </a>
+  </div>
               </div>
 
+              {/* Phone */}
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <p className="text-gray-300">(323) 589-3219</p>
+                <a href="tel:+13235893219" className="text-gray-300 hover:text-blue-400">
+                  (323) 589-3219
+                </a>
               </div>
 
+              {/* Email */}
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <p className="text-gray-300">uadinco@gmail.com</p>
+                <a href="mailto:uadinco@gmail.com" className="text-gray-300 hover:text-blue-400">
+                  uadinco@gmail.com
+                </a>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 text-blue-400 mt-1" />
-                <div className="text-gray-300">
-                  <p>Mon – Fri: 8AM – 5PM</p>
-                  <p>Saturday: 8AM – 3PM</p>
-                </div>
+              {/* Fax */}
+              <div className="flex items-center space-x-3">
+                <Printer className="h-5 w-5 text-blue-400" /> {/* You can replace Clock with a Fax icon if desired */}
+                <a href="fax:+13235891062" className="text-gray-300 hover:text-blue-400">
+                  (323) 589-3220
+                </a>
               </div>
+
             </div>
           </div>
         </div>

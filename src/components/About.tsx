@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Clock, Users, Shield } from 'lucide-react';
+import bmw from '../assets/bmw.jpeg';
 
 const About = () => {
   const values = [
@@ -73,6 +74,13 @@ const About = () => {
               alt="Used cars in junkyard"
               className="w-full h-96 object-cover rounded-2xl shadow-lg"
             />
+            <div className="absolute inset-0">
+              <img
+                src={bmw}
+                alt="About section"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
           </div>
         </div>
