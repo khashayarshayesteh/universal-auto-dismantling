@@ -156,7 +156,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Printer className="h-5 w-5 text-blue-400" /> {/* You can replace Clock with a Fax icon if desired */}
                 <a href="fax:+13235891062" className="text-gray-300 hover:text-blue-400">
-                  (323) 589-3220
+                  (323) 589-1062
                 </a>
               </div>
 

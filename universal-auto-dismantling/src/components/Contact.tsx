@@ -20,7 +20,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
   };
 
@@ -28,13 +27,12 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['(323)589-3219'],
-
+      details: ['#'],
     },
     {
-        icon: Printer,
-        title: 'Fax',
-        details: ['(323)589-1062'],
+      icon: Printer,
+      title: 'Fax',
+      details: ['#'],
     },
     {
       icon: Mail,
@@ -45,7 +43,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['5534 Duarte St', 'Los Angles, CA 90058'],
+      details: ['5534 Duarte St', 'Los Angeles, CA 90058'],
       description: 'Free parking on street'
     },
     {
@@ -62,11 +60,10 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl font-bold text-white">Contact Us</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Looking for quality used auto parts or need to sell a junk car?
-              Contact our auto dismantling team for fast service and fair pricing.
-            </p>
-
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Looking for quality used auto parts or need to sell a junk car?
+            Contact our auto dismantling team for fast service and fair pricing.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
@@ -79,7 +76,6 @@ const Contact = () => {
                   We specialize in junk cars, auto dismantling, and quality used auto parts.
                   Contact us today for quick quotes and reliable service.
                 </p>
-
               </div>
 
               {/* Contact Details */}
@@ -114,7 +110,6 @@ const Contact = () => {
                 Request Auto Parts or Junk Car Quote
               </h3>
 
-              
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -132,7 +127,7 @@ const Contact = () => {
                       placeholder="Your full name"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                       Email Address *
@@ -165,7 +160,7 @@ const Contact = () => {
                       placeholder="Your company name"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
                       Phone Number
@@ -194,59 +189,13 @@ const Contact = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   >
-                        <option value="junk-car">Sell My Junk Car</option>
-                        <option value="used-parts">Used Auto Parts</option>
-                        <option value="dismantling">Auto Dismantling</option>
-                        <option value="towing">Vehicle Towing</option>
-                        <option value="general">General Inquiry</option>
-
+                    <option value="junk-car">Sell My Junk Car</option>
+                    <option value="used-parts">Used Auto Parts</option>
+                    <option value="dismantling">Auto Dismantling</option>
+                    <option value="towing">Vehicle Towing</option>
+                    <option value="general">General Inquiry</option>
                   </select>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-                    placeholder="Tell us about the vehicle (year, make, model), parts you need, or if you want to sell a junk car..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-all duration-200 flex items-center justify-center space-x-2 group"
-                >
-                  <Send className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-                  <span>Send Message</span>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        {/* Quick Contact CTA */}
-        <div className="mt-16 bg-blue-500 rounded-2xl p-8 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">Need Immediate Assistance?</h3>
-          <p className="text-xl mb-6 opacity-90">
-            Call us now to sell your junk car or find quality used auto parts.
-          </p>
-          <a
-            href="tel:+3235893219"
-            className="bg-white text-blue-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-block"
-          >
-            Call (323)589-3219
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Contact;
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 m
